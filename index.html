@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My URL Shortner</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <nav>
+       <div>
+            <a href="#" class="logo">Shortly</a>
+            
+            <div class="navlinks">
+                <a href="#">Features</a>
+                <a href="#">Pricing</a>
+                <a href="#">Resources</a>
+                <div class="login">
+                    <a href="#">Login</a>
+                    <a href="#">Sign Up</a>
+                </div>
+            </div>
+       </div>
+       <div class="navToggler" onclick="navOpen()">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+       </div>
+       <div class="login">
+            <a href="#">Login</a>
+            <a href="#">Sign Up</a>
+       </div>
+    </nav>
+
+    <section id="hero">
+        <div data-aos="fade-left">
+            <h1>More than just shorter links</h1>
+            <p>
+                Build your brand’s recognition and get detailed insights on how your links are performing.
+            </p>
+            <a href="#">Get Started</a>
+        </div>
+        <img src="/images/illustration-working.svg" alt="" data-aos="fade-right">
+    </section>
+
+    <div class="underlay">
+    </div>
+        <form class="inputBg" data-aos="zoom-in-up" data-aos-easing="linear" data-aos-duration="500">
+            <div class="errorMsgs">
+                <span class="error">Please add a link here</span>
+                <span class="invalidUrl">Please use a valid URL</span>
+            </div>
+            <div class="inps">
+                <input type="text" id="urlText" placeholder="Shorten a link here...">
+                <button class="shortItBtn">
+                    <p class="shortenItText">Shorten It!</p>
+                    <div id="loading"></div>
+                </button>
+                <!-- <input type="submit" value="" > -->
+            </div>
+        </form>
+        <div class="urlContainer">
+        </div>
+
+        <section id="main">
+            
+            <div class="advancedStats">
+                <div class="advancedStatsHeading">
+                    <h1>Advanced Statistics</h1>
+                    <p>
+                        Track how your links are performing across the web with our advanced statistics dashboard.
+                    </p>
+                </div>
+                <div class="advancedStatsBoxes">
+                    <div data-aos="fade-down" data-aos-delay="100">
+                        <img src="/images/icon-brand-recognition.svg" alt="">
+                        <h3>Brand recognition</h3>
+                        <p>
+                            Brand Recognition Boost your brand recognition with each click. Generic links don’t mean a thing. Branded links help instil confidence in your content.
+                        </p>
+                    </div>
+                    <div data-aos="fade-down" data-aos-delay="200">
+                        <img src="/images/icon-detailed-records.svg" alt="">
+                        <h3>Detailed Records</h3>
+                        <p>
+                            Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions.
+                        </p>
+                    </div>
+                    <div data-aos="fade-down" data-aos-delay="300">
+                        <img src="/images/icon-fully-customizable.svg" alt="">
+                        <h3>Fully Customizable</h3>
+                        <p>
+                            Improve brand awareness and content discoverability through customizable links, supercharging audience engagement.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+
+    <section id="boostSection">
+        <h1>Boost your links today</h1>
+        <a href="#">Get Started</a>
+    </section>
+
+    <section id="footer">
+        <div class="footerDiv">
+            <h1 class="footerLogo">Shortly</h1>
+            <div class="footerLinks">
+                <div>
+                    <h1>Features</h1>
+                    <a href="#">Link Sharing</a>
+                    <a href="#">Branded Links</a>
+                    <a href="#">Analytics</a>
+                </div>
+                <div>
+                    <h1>Resources</h1>
+                    <a href="#">Blogs</a>
+                    <a href="#">Developers</a>
+                    <a href="#">Support</a>
+                </div>
+                <div>
+                    <h1>Company</h1>
+                    <a href="#">About</a>
+                    <a href="#">Our Team</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Contact</a>
+                </div>
+                <div class="footerIcons">
+                    <a href="https://wa.me/+2347040678029" target="_blank">
+                        <i class="ri-whatsapp-fill"></i>
+                    </a>
+                    <a href="https://github.com/franklin-raph" target="_blank">
+                        <i class="ri-github-fill"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footerText">
+            <p>Copyright &copy; since <script> document.write(new Date().getFullYear()) </script> </p>
+            <p style="font-size: 14px; font-weight: 700;">Built by Sparrowthedev</p>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>
