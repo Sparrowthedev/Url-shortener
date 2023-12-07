@@ -299,18 +299,20 @@ input[type="text"]:focus{
 }
 
 .url1LongLink{
-    font-size: 16px;
+    font-size: 12px;
+    padding: 25px;
 }
 
 
 .url{
     background-color: rgb(235, 241, 241);
     display: flex;
+    flex-direction: column;
     width: 70%;
     margin: 10px auto;
     justify-content: space-between;
     align-items: center;
-    padding: 16px;
+    padding: 20px;
     border-radius: 7px;
     box-shadow: 7px 7px 10px rgb(218, 218, 218);
 }
@@ -503,7 +505,15 @@ input[type="text"]:focus{
     .url{
         width: 90%;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
+    }
+
+    .url1LongLink{
+        font-size: 9px;
+    }
+
+    .url1ShortLink {
+        font-size: 12px;
     }
 
     .url div{
@@ -745,4 +755,15 @@ input[type="text"]:focus{
     .navlinks{
         width: 265px;
     }
+  }
+
+  .logo{
+    height: 80px;
+    width: 80px;
+  }
+
+  .logo-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
   }
