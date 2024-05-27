@@ -14,6 +14,10 @@ html, body{
     width: 100%;
 }
 
+.ri-heart-line {
+    color: red;
+}
+
 :root{
     --Cyan: hsl(180, 66%, 49%);
     --Dark-Violet: hsl(257, 27%, 26%);
